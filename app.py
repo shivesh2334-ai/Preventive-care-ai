@@ -449,7 +449,7 @@ class PreventiveCareApp:
                 st.markdown(f"""
                 <div class="risk-card {risk_level.lower()}-risk">
                     <h4>{condition}</h4>
-                    <p><strong>Risk Score:</strong> {risk_data['risk_percentage']:1f}% over 10-15 years</p>
+                    <p><strong>Risk Score:</strong> {risk_data['risk_percentage']:if}% over 10-15 years</p>
                     <p><strong>Risk Level:</strong> {risk_level}</p>
                     <p><strong>Key Factors:</strong> {', '.join(risk_data['key_factors'])}</p>
                 </div>
